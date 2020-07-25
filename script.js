@@ -1,4 +1,7 @@
-          const calculate =document.getElementById('addNumber');
+
+// Bangla Subject calculation
+
+         const calculate =document.getElementById('addNumber');
           calculate.addEventListener('click', function (){
           
           const numberInput=document.getElementById('bangla-number').value;
@@ -51,6 +54,13 @@
                         else{
                           document.getElementById('grade').innerText='F'
                         }
+
+
+
+                        const Marks=document.getElementById('total-marks').innerText;
+                        const marksCount=parseFloat(Marks);
+                        const totalMarks=numberCount+ marksCount;
+                        document.getElementById('total-marks').innerText=totalMarks;
 
 
 

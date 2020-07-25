@@ -1,11 +1,4 @@
 
-/* 
-function getInputNumber(id){
-
-}
- */
-
-
 
 
 
@@ -14,15 +7,15 @@ function getInputNumber(id){
 
 // Bangla Subject calculation
 
-         const calculate =document.getElementById('addNumber');
-          calculate.addEventListener('click', function (){
+         const calculateBangla =document.getElementById('addNumber');
+          calculateBangla.addEventListener('click', function (){
           
           const numberInput=document.getElementById('bangla-number').value;
-          const numberCount=parseFloat(numberInput);
-       
+          const numberCount=parseFloat(numberInput); 
+              
   
  
-                         if(numberCount>=90 && numberCount<=93){
+                          if(numberCount>=90 && numberCount<=93){
                           document.getElementById('grade').innerText= "A";
                          
 
@@ -66,17 +59,17 @@ function getInputNumber(id){
                         else{
                          document.getElementById('grade').innerText='F'
                         }
-
+ 
 
 
                         const marks=document.getElementById('total-marks').innerText;
                         const marksCount=parseFloat(marks);
                         const totalMarks=numberCount+ marksCount;
                         document.getElementById('total-marks').innerText=totalMarks;
-
+ 
                       
 
-                       // addCalculator("bangla-number");
+                      
                       
                        document.getElementById("bangla-number").value="";
 
@@ -87,9 +80,12 @@ function getInputNumber(id){
 
 const calculateEnglish =document.getElementById('addNUmberEnglish');
 calculateEnglish.addEventListener('click', function (){
+ 
 
-const numberInput=document.getElementById('english-number').value;
-const numberCount=parseFloat(numberInput);
+            const numberInput=document.getElementById('english-number').value;
+            const numberCount=parseFloat(numberInput);
+
+          
 
 
 
@@ -143,21 +139,11 @@ const numberCount=parseFloat(numberInput);
               const marks=document.getElementById('total-marks').innerText;
               const marksCount=parseFloat(marks);
               const totalMarks=numberCount+ marksCount;
-              document.getElementById('total-marks').innerText=totalMarks;
+              document.getElementById('total-marks').innerText=totalMarks; 
 
             
 
-             // addCalculator("bangla-number");
             
              document.getElementById("english-number").value="";
 
 })
-
-
-/* const calculatedEnglish=document.getElementById('addNUmberEnglish');
-calculatedEnglish.addEventListener('click', function(){
-
-  addCalculator('english-number');
-  document.getElementById('english-number').value="";
-})
- */
